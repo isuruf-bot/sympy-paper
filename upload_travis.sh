@@ -2,7 +2,7 @@ export commit_id=`git log -1 --pretty=format:"%H"`
 
 git config --global push.default simple
 git config --global user.name "Isuru Fernando"
-git config --global user.email "isuruf@gmail.com"
+git config --global user.email "isuruf-bot@users.noreply.github.com"
 
 set +x
 git clone "https://${GH_TOKEN}@github.com/isuruf-bot/sympy-paper.git" upload -q
