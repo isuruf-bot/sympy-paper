@@ -9,7 +9,7 @@ git clone "https://${GH_TOKEN}@github.com/isuruf-bot/sympy-paper.git" upload -q
 set -x
 
 cd upload
-#git checkout -b pdfs --track origin/pdfs;
+git checkout -b pdfs --track origin/pdfs;
 
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     export name=paper-${TRAVIS_BRANCH}.pdf
